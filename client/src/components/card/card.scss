@@ -1,0 +1,74 @@
+@import "../../responsive.scss";
+
+.card{
+    display: flex;
+    gap: 20px;
+
+    .imageContainer{
+        flex: 2;
+        height: 200px;
+
+        @include sm{
+            display: none;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+    }
+
+    .textContainer{
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .address i{
+            margin-right: 10px;
+        }
+
+        .price{
+            
+            background-color: #fada89;
+            width: max-content;
+            padding: 2px;
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+
+            .features{
+                display: flex;
+
+                .feature{
+                    margin-right: 20px;
+                    background-color: rgb(237, 237, 237);
+                    padding: 3px;
+                    border-radius: 5px;
+
+                    & i{
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .icons{
+                display: flex;
+                gap: 10px;
+                
+                
+            }
+        }
+
+        
+    }
+}
